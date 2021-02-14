@@ -43,8 +43,7 @@ p {
 .wrapper {
   background: #4B6A78;
   max-width: 960px;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 30px auto 0;
   position: relative;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -54,8 +53,8 @@ p {
 .sidebar-wrapper {
   background: #4B6A78;
   position: absolute;
-  right: 0;
-  width: 240px;
+  left: 0;
+  width: 260px;
   height: 100%;
   min-height: 800px;
   color: #fff;
@@ -65,22 +64,15 @@ p {
   color: #fff;
 }
 
-.sidebar-wrapper .profile-container {
-  padding: 30px;
-  background: rgba(0, 0, 0, 0.2);
-  text-align: center;
-  color: #fff;
-}
-
-.sidebar-wrapper .name {
-  font-size: 32px;
+.main-wrapper .name {
+  font-size: 48px;
   font-weight: 900;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-.sidebar-wrapper .tagline {
-  color: rgba(255, 255, 255, 0.6);
+.main-wrapper .tagline {
+  /*color: rgba(255, 255, 255, 0.6);*/
   font-size: 16px;
   font-weight: 400;
   margin-top: 0;
@@ -88,7 +80,14 @@ p {
 }
 
 .sidebar-wrapper .profile {
-  margin-bottom: 15px;
+  width: 260px;
+  height: auto;
+  /*border-radius: 50%;*/
+}
+
+.sidebar-wrapper .contact-container {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
 }
 
 .sidebar-wrapper .contact-list .svg-inline--fa {
@@ -99,6 +98,10 @@ p {
 
 .sidebar-wrapper .contact-list li {
   margin-bottom: 15px;
+}
+
+.sidebar-wrapper .contact-list li:first-child {
+  margin-top: 1em;
 }
 
 .sidebar-wrapper .contact-list li:last-child {
@@ -179,8 +182,7 @@ p {
 
 .main-wrapper {
   background: #fff;
-  padding: 60px;
-  padding-right: 300px;
+  padding: 60px 60px 60px 300px;
 }
 
 .main-wrapper .section-title {
@@ -220,11 +222,15 @@ p {
 }
 
 .main-wrapper .section {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+}
+
+.main-wrapper .headline-section {
+  margin-bottom: 135px;
 }
 
 .main-wrapper .experiences-section .item {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .main-wrapper .upper-row {
@@ -280,6 +286,7 @@ p {
 }
 
 .skillset .level-bar {
+  margin-top: 5px;
   height: 12px;
   background: #f5f5f5;
   -webkit-border-radius: 2px;
@@ -293,7 +300,8 @@ p {
 }
 
 .skillset .theme-progress-bar {
-  background: #5f8697;
+  /*background: #5f8697;*/
+  background: #2e4049;
 }
 
 .footer {
@@ -333,7 +341,7 @@ p {
   .skillset .level-title {
     display: inline-block;
     float: left;
-    width: 30%;
+    width: 40%;
     margin-bottom: 0;
   }
 }
